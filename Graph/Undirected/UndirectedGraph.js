@@ -20,15 +20,4 @@ class UndirectedGraph extends Graph {
   }
 }
 
-const graph = new UndirectedGraph();
-graph.addVertex(1);
-graph.addVertex(2);
-graph.addVertex(3);
-graph.addVertex(4);
-graph.addEdge(1, 4, 1);
-graph.addEdge(2, 3, 1);
-graph.addEdge(3, 4, 1);
-graph.addEdge(3, 1, 1);
-graph.traverseDFS("1", (vertex) => console.log(vertex));
-console.log(graph.edges);
-graph.traverseBFS("1", (vertex) => console.log(vertex));
+module.exports = UndirectedGraph;
